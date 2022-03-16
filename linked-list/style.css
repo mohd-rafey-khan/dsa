@@ -1,0 +1,46 @@
+#display{
+    width: 95%;
+    height: 20%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    /* bottom: 0%; */
+    margin: auto;
+    /* background-color:antiquewhite; */
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 5px; */
+    /* grid: 100px / auto auto auto; */
+}
+.node{
+    width: 100px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 2px dotted green;
+    position: relative;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+.col1{
+    background-color: aquamarine;
+    height: 100%;
+    position: relative;
+    width: 80%;
+}
+.arrow{
+    width: 40px;
+    height: 0.1px;
+    border: 2px solid red;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:90%;
+    margin: auto;
+}
