@@ -13,7 +13,9 @@ dlt_node.addEventListener('click',()=>{
 })
 // Middle element
 const mid_node = document.getElementById('mid_node');
-
+mid_node.addEventListener('click',()=>{
+    middleNode();
+});
 
 
 
@@ -41,6 +43,11 @@ function displayNode(head){
 
         temp = temp.next;
     }
+}
+// highlight middle element with color red
+function highlight_mid(index){
+    const nodes = document.querySelectorAll('.node');
+    nodes[index].firstChild.style.backgroundColor = "red";
 }
 
 
@@ -82,6 +89,18 @@ function deleteNode(status){
     }
     displayNode(head);
 }
-
+// ### function to find mid element in linked list
+function middleNode(){
+    var first_node = head;
+    var sec_node = first_node;
+    var index = 0;
+    while(first_node.next!=null && first_node.next.next!=null){
+        first_node = first_node.next.next;
+        sec_node = sec_node.next;
+        index++;
+    }
+    console.log(`${sec_node.data} is at ${index}`);
+    highlight_mid(index);
+}
 
 
