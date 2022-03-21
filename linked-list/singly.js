@@ -11,6 +11,10 @@ const dlt_node = document.getElementById('dlt_node');
 dlt_node.addEventListener('click',()=>{
     deleteNode(dlt_option.value);
 })
+// Middle element
+const mid_node = document.getElementById('mid_node');
+
+
 
 
 
